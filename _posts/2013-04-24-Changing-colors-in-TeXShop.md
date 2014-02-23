@@ -3,7 +3,7 @@ layout: post
 title: "Changing colors in TeXShop"
 description: ""
 category: Latex
-tags: [python]
+tags: [Tex]
 ---
 {% include JB/setup %}
 
