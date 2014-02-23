@@ -13,8 +13,8 @@ Consider the following example (taken from python4astromers)
 
 {% highlight python %}
 	RAJ        DEJ            2MASS           Jmag   e_Jmag
-	(deg)      (deg)                                    (mag)
-	---------------  -------------- --------------------------  --------  ---------
+	(deg)      (deg)                                  (mag)
+	---------------  -------------- -------------------------- 
 	010.684737 +41.269035 00424433+4116085   9.453  0.052
 	010.683469 +41.268585 00424403+4116069   9.321  0.022
 	010.685657 +41.269550 00424455+4116103  10.773  0.069
@@ -25,9 +25,6 @@ Consider the following example (taken from python4astromers)
 {% endhighlight %}
 
 As any astronomer would realize this is a basic type of data table we so often read in. Now, there are many ways to read this table. However, I found the following method the most effective one: 
-
-{% highlight python %}
-{% endhighlight %}
 
 {% highlight python %}
 	  a = np.genfromtxt('test_file.txt',  dtype=None, names=True)
