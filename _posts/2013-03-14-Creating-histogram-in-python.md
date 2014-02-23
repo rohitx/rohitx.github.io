@@ -14,6 +14,7 @@ The code I wrote is the following:
 {% highlight python linenos %}
 import numpy as np
 import matplotlib.pyplot as plt
+import pandas as pd
 {% endhighlight %}
 
 Alright. Now that you have the code, I will go through it and explain all what I did. The first three lines are the comments. Following that we have two import statements. We need the first import statement to create a histogram plot. This is a package in Python that allows you to create amazing plot. If you do not have it already, search for matplotlib and you should find it. Use easy_install to install this package. 
