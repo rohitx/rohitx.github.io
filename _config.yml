@@ -9,12 +9,11 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Another Jekyll Blog
-tagline: Just another Jekyll blog
+title: "The Learning Curve"
+tagline: "Data Science"
 author : 
   name : Robert Louis Stevenson
-  email : 
-  github : 
+  email: "rohitdeshpande@gmail.com"
   twitter : 
 
 # The production_url is only used when full-domain names are needed
@@ -31,7 +30,7 @@ author :
 #
 JB :
   version : 0.3.0
-  bootswatch: amelia
+  bootswatch: slate
   # All links will be namespaced by BASE_PATH if defined.
   # Links in your website should always be prefixed with {{BASE_PATH}}
   # however this value will be dynamically changed depending on your deployment situation.
