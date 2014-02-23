@@ -18,5 +18,6 @@ Now I am going to write a code and see if it highlights.
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
+from pylab import *
 from pylab import yticks
 {% endhighlight %}
