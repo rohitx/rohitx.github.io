@@ -25,7 +25,7 @@ The code I wrote is the following:
 	plt.title("Our HET Sample")
 	plt.xlabel('SB-type')
 	plt.ylabel('Number of Stars')
-	plt.savefig('SBs_histogram.eps, facecolor='w', edgecolor='w', format = 'eps')
+	plt.savefig('SBs_histogram.eps, facecolor='w', edgecolor='w')
 	from pylab import yticks
 {% endhighlight %}
 
