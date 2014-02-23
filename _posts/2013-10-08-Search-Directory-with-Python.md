@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Searching for files like the FILE_SEARCH() function in IDL "
+title: "Searching for files like the FILE_SEARCH() function in IDL"
 description: ""
 category: Python
 tags: [python]
