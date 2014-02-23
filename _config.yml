@@ -10,7 +10,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title: "The Learning Curve"
-tagline: "Data Science"
+tagline: "Data Science And Data Visualization"
 author : 
   name : Rohit Deshpande
   email: "rohitdeshpande@gmail.com"
