@@ -12,9 +12,21 @@ One of the things astronomers love doing is creating histogram plots in their pa
 The code I wrote is the following: 
 
 {% highlight python linenos %}
-import numpy as np
-import matplotlib.pyplot as plt
-import pandas as pd
+	import numpy as np
+	import matplotlib.pyplot as plt
+	from pylab *
+	from pylab import yticks
+	a = np.genfromtxt('plot_SB.txt', dtype=None, names=True)
+	plt.hist(a['SB'], range=[0,5], facecolor='darkgray', allign='left')
+	ylim(2,34)
+	yticks(range(2,34,4))
+	my_xticks=['', 'SB1', 'SB2', 'SB3', 'Unknown']
+	plt.xticks(range(0,5), my_xticks, size='small')
+	plt.title("Our HET Sample")
+	plt.xlabel('SB-type')
+	plt.ylabel('Number of Stars')
+	plt.savefig('SBs_histogram.eps, facecolor='w', edgecolor='w', format = 'eps')
+	from pylab import yticks
 {% endhighlight %}
 
 Alright. Now that you have the code, I will go through it and explain all what I did. The first three lines are the comments. Following that we have two import statements. We need the first import statement to create a histogram plot. This is a package in Python that allows you to create amazing plot. If you do not have it already, search for matplotlib and you should find it. Use easy_install to install this package. 
