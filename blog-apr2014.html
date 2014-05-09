@@ -1,0 +1,205 @@
+
+<html>
+  <head>
+    <title>Rohit Deshpande</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+    
+  <div class=" navbar navbar-default navbar-static-top">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Rohit Deshpande</a>
+
+      <button class="navbar-toggle" data-toggle="collapse" data-target = ".navHeaderCollapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse navHeaderCollapse">
+        
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="blog-jan2014.html">Blog</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="icon-header" href="http://github.com/singlebinary"><i class="icon-github icon-2x"></i></a>
+          <li><a class="icon-header" href="http://twitter.com/singlebinary"><i class="icon-twitter icon-2x"></i></a>
+          </li>
+        </ul>
+
+
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+    <div class="container">
+
+      <div class="blog-header">
+        <h1 class="blog-title">Pythonic Ramblings</h1>
+        <p class="lead blog-description">My experiences with Python, Data Analysis, and Astrophysics</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Duration of an Exoplanet's Day Measured! </h2>
+            <p class="blog-post-meta">April 30, 2014 </p>
+
+            <p align="justify">There was an announcement today from the European Southern Observatory about measurement of the length of a day on an exoplanet. The <a href="http://www.eso.org/public/news/eso1414/">article </a> states that this was the first time that such a feat has been achieved. So, how did they do it?  </p>
+
+            <p align="justify">To give you a background let me first talk a little more about the discovery of the exoplanet or maybe the star that hosts this planet. The star known as Beta Pictoris is one of the best known examples of stars that has a debris disk. The debris disk is basically disk of rocks and dusk that surrounds the star. It is what is left when planets have eventually formed from the disk. Our solar system has a debris disk called the Kuiper Belt.</p>
+            
+            <p align="justify"> In 2008, astronomers, for the first time, were able to image a planet directly around Beta Pictoris. Now, the planet is most cases cannot be seen directly. This is because the star is hundreds and thousands of times brighter than the planet that orbits it. So, is most cases we can either detect the presence of a planet by the influence it has on the motion of its host star, or when it goes across the face of the star. However, with a <a href="http://en.wikipedia.org/wiki/Coronagraph"> coronograph</a> we can directly see the planet or take a photo of it. A coronograph is an attachment to a telescope that allows astronomers to block the star and in turn allows us to get a photo of the planet. With the aid of a coronograph, astronomers imaged the planet that orbits the star Beta Pictoris. The image of the planet, a white dot around the star can be seen <a href="http://www.eso.org/public/news/eso0842/">here</a>. You can also see the debris disk that goes across the image. </p> 
+
+            <p align="justify">Today, they announced that astronomers have been able to measure the duration of day of this planet. This is phenomenal because the planet is 63 light-years away and yet can differentiate between day and night on a planet! I am sure you are raring to know how they did this. So, without further ado here's how: </p>
+
+            <p align="justify">Astronomers first blocked the light that emenated from the star. This allowed them to capture light just from the planet. Next they channeled this light through a prism and split it into different colors and therefore got a spectrum of the planet. The spectrum of the sun looks like the image shown below:  </p>
+
+            <img src="http://scope.pari.edu/images/sunspectrum.jpg" alt="Sun's spectrum" width="560" height="420">
+
+            <p align="justify">As you can see the spectrum of the light has those black lines. When the planet rotates around itself, these lines move, very slightly. So for example, they go in one direction, change direction after some time, and return to the initial position as the planet makes one full turn. Then they repeat. So, by measuring how long the lines take to get to their intial position, the astronomers were able to find the duration of the day. </p>
+
+            <p align="justify"> The found that the duration of a day on Beta Pictoris b is only 8 hours. This means that on this planet the star rises every 8 hours. This is not surprising because the planet is very young, just 20 million years while the Earth is 4.6 billion years old. But what is fascinating is that at planet's equator, the speed is 100,000 km/hour. In comparison the speed at Jupiter's equator is 47,000 km/hour while at the Earth's equator the speed is 1700 km/hour. </p>
+           
+            
+            <p></p>
+
+
+
+          </div><!-- /.blog-post -->
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">Searching for files like the FILE_SEARCH() function in IDL</h2>
+            <p class="blog-post-meta">January 15, 2014 </p>
+
+
+            <p></p>
+
+          </div><!-- /.blog-post -->
+
+          <div class="blog-post">
+            <h2 class="blog-post-title">How to read IDL .sav files in Python</h2>
+            <p class="blog-post-meta">January 04, 2014</p>
+
+            <p>With my on-going effort to transition from IDL to Python, I present a post on reading IDL .sav files in Python</p>
+            <ul>
+              <li>Make sure you have the latest version of Numpy and Scipy installed</li>
+              <li>Visit this page: <a href="http://astrofrog.github.io/idlsave/">IDL Sav file package</a></li>
+              <li>Open terminal and change directory into your Downloads directory (if this is your default directory</li>
+              <li>Untar the folder calledd "ILDSave-1.0.0.tar.gz"</li>
+              <li>CD into the directory and type:
+              <pre><code>python setup.py install</code>></col></pre>
+              This should install the package.</li>
+
+            </ul>
+            <p>Next, we use pip to get the IDLsav package. Here's how to do it:</p>
+            <pre><code>pip install idlsave</code></pre>
+            <p>Now in the terminal go to the directory where .sav file exists and start python. Once you are inside python do the following: </p>
+            <pre><code>import idlsave
+s = idlsave.read("filename.sav")
+
+--------------------------------------------------
+Date: Thu May  3 20:47:14 2012
+User: ryan
+Host: HPC
+--------------------------------------------------
+Format: 10
+Architecture: x86_64
+Operating System: darwin
+IDL Version: 8.0
+--------------------------------------------------
+Successfully read 5 records of which:
+ - 1 are of type VARIABLE
+ - 1 are of type TIMESTAMP
+ - 1 are of type NOTICE
+ - 1 are of type VERSION
+--------------------------------------------------
+Available variables:
+ - all [&lt;class 'numpy.core.records.recarray'&gt;]
+--------------------------------------------------
+            </code></pre>
+            <p>NOte that this case the variable is called "all". This .sav file is a structure. You might get a bunch of errors. Have a look at those and decide if you can ignore them. In most cases you can. Now if you do: </p>
+            <pre><code>s.all.type
+dtype([(('name', 'NAME'), '|O8'), (('ra', 'RA'), '>f8'), (('de', 'DE'), '>f8'), (('_2mass', '_2MASS'), '|O8'), (('pmra', 'PMRA'), '>f8'), (('pmde', 'PMDE'), '>f8'), (('vmag', 'VMAG'), '>f8'), (('jmag', 'JMAG'), '>f8'), (('hmag', 'HMAG'), '>f8'), (('kmag', 'KMAG'), '>f8'), (('v_j', 'V_J'), '>f8'), (('visits', 'VISITS'), '>f8'), (('field', 'FIELD'), '|O8'), (('origin', 'ORIGIN'), '>i2'), (('proper_motion_src', 'PROPER_MOTION_SRC'), '|O8'), (('priority', 'PRIORITY'), '>i2'), (('type', 'TYPE'), '|O8'), (('ra2mass', 'RA2MASS'), '>f8'), (('de2mass', 'DE2MASS'), '>f8')])
+            </code></pre>
+            <p>I get the structure or the headers for each of the columns. Now you can parse each column. For example, I can parse just the RA as: </p>
+            <pre><code>ra = s.all.ra</code></pre>
+            <p>That's it. You have now read and parsed IDL .sav file without running IDL. </p>
+          </div><!-- /.blog-post -->
+
+          <ul class="pager">
+            <li><a href="#">Previous</a></li>
+            <li><a href="#">Next</a></li>
+          </ul>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <h4>About</h4>
+            <p>I am an astronomer at Penn State and a Data enthusiast. Most of my research deals will looking at large datasets from the Sloan Digital Sky Survey (SDSS), interpreting, extracting, and analysing information. My research involves the search for Earth-like planets outside our solar system. </p>
+          </div>
+          <div class="sidebar-module">
+            <h4>Archives</h4>
+            <ol class="list-unstyled">
+              <li><a href="blog-apr2014.html">April 2014</a></li>
+              <li><a href="blog-jan2014.html">January 2014</a></li>
+              <li><a href="#">May 2013</a></li>
+
+            </ol>
+          </div>
+          <div class="sidebar-module">
+            <h4>Elsewhere</h4>
+            <ol class="list-unstyled">
+              <li><a href="https://github.com/rohitx">GitHub</a></li>
+              <li><a href="https://twitter.com">Twitter</a></li>
+            </ol>
+          </div>
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <div class="blog-footer">
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+
+<!-- Google Analytics --> 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41029669-2', 'rohitx.github.io');
+  ga('require', 'displayfeatures')
+  ga('send', 'pageview');
+
+</script>
+
+  </body>
+</html>
