@@ -1,0 +1,30 @@
+# Site settings
+title: Rohit at 1 A.U.
+email: singlebinary@gmail.com
+author: Rohit Deshpande
+description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
+baseurl: ""
+url: "/"
+google_analytics:
+animated: true
+show_related_posts: false
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+paginate: 5
+sass:
+  compressed: true
+
+  name: Rohit 
+  email: singlebinary@gmail.com
+  github: singlebinary
+  twitter: singlebinary
+  linkedin: www.linkedin.com/in/rohitsdeshpande/
+  bio: Rohit Deshpande <br>
+       Data Scientist & Astronomer
+  email_md5: 726351295ec82e145928582f595aa3aa
+
+rss_path: feed.xml
+categories_path: categories.html
+tags_path: tags.html

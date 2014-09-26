@@ -1,0 +1,17 @@
+# Site settings
+title: Rohit at 1 A.U.
+email: your_email@example.com
+author: Rohit Deshpande
+description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
+baseurl: "/"
+url: "/"
+google_analytics:
+animated: false
+show_related_posts: true
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+paginate: 5
+sass:
+  compressed: true

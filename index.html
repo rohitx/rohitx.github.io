@@ -1,148 +1,28 @@
-<!DOCTYPE html>
+---
+layout: default
+---
 
-<html>
-	<head>
-		<title>Rohit Deshpande</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/styles.css" rel="stylesheet">
+Hi, I'm Rohit an astronomer and aficionado Data Scientist. 
+<br>
+Check out my blog post and Data Science Projects. 
 
+<h2>Recent Posts</h2>
 
-	</head>
+<div class="home">
 
-	<body>
-		
-	<div class=" navbar navbar-default navbar-static-top">
-		<div class="container">
-			<a href="#" class="navbar-brand">Rohit Deshpande</a>
+  <div class="posts">
+    {% for post in paginator.posts %}
+      <div class="post">
+        <a href="{{ post.url | prepend: site.baseurl }}" class="post-link">
+          <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+          <h3 class="h2 post-title">{{ post.title }}</h3>
+          <p class="post-summary">{{ post.summary }}</p>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
 
-			<button class="navbar-toggle" data-toggle="collapse" data-target = ".navHeaderCollapse">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
+  {% include pagination.html %}
 
-			<div class="collapse navbar-collapse navHeaderCollapse">
-				
-				<ul class="nav navbar-nav navbar-left">
-<<<<<<< HEAD
-					<li><a href="http://singlebinary.github.io">Blog</a></li>
-=======
-					<li><a href="blog-apr2014.html">Blog</a></li>
->>>>>>> FETCH_HEAD
-					<li><a href="projects.html">Projects</a></li>
-					<li><a href="about.html">About</a></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a class="icon-header" href="http://github.com/singlebinary"><i class="icon-github icon-2x"></i></a>
-					<li><a class="icon-header" href="http://twitter.com/singlebinary"><i class="icon-twitter icon-2x"></i></a>
-					</li>
-				</ul>
-
-
-
-			</div>
-
-		</div>
-
-
-	</div>
-
-	<div class="content">
-		<div class="container">
-			<div class="row">
-					<div class="col-md-6">
-						<p class="lead text-muted">Astronomy & Data Analysis</p>
-					</div>
-				</div>
-			<div class="col-md-12">
-			<p> I am Rohit, an astrophysicist at the <a href="http://www.psu.edu">Pennsylvania State University</a>. My work involves characterization of stars that may host habitable planets. Habitable planets are rocky planets that have just the right conditions to support life. I am part of the team looking for Earth 2.0. My work involves working on datasets from large Astronomical surveys such as <a href="http://www.sdss.org/">SDSS</a>. I am currently involved in the SDSS-III project that looks at 100,000 stars. You can read more about my work, my skill sets and expertise under the <a href="about.html">About </a>page.</p>
-
-
-
-			<p>Data Analysis is part of research work. Primarily, I use Python and do most of data munging in <a href="http://pandas.pydata.org/">Pandas</a>. Check out my <a href="#">Project</a> page for recent work and <a href="#">Blog</a> posts for things to learn.</p>
-			<p>Follow me <a href="https://twitter.com/singlebinary">Twitter</a> and learn about me on <a href="https://www.linkedin.com/pub/rohit-deshpande/47/180/71">LinkedIn</a>. </p>
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<h4>Recent Projects</h4>
-					<div>
-						<a href="coma_ber.html">Data Science in action: A story of Coma Berenices</a>
-					    <div>April 20, 2014</div>
-					</div>
-					<p> </p>
-					<div>
-						<a href="hipparcos_catalogue.html">Data Acquisition, Munging, and Plotting of the Hipparcos Catalog of 186,000 stars with Python Panda</a>
-					    <div>April 1, 2014</div>
-					</div>
-					<p> </p>
-				<div>
-					<a href="NASA_ADS.html"><p>Mining ADS NASA API for First Planet Discovery Papers
-					 by Penn State Faculty</p></a>
-					<div>March 03, 2014</div>
-					<p>
-						
-
-
-					</p>
-				</div>
-
-				</div>
-				<div class="col-md-6">
-					<h4>Recent Blog Posts</h4>
-					<div>
-						<a href="blog-apr2014.html">Duration of exoplanet's day measured </a>
-						<div>April 30, 2014</div>
-						<p></p>
-					</div>
-					<div>
-						<a href="blog-jan2014.html">Installation Guide to iPython Notebook</a>
-						<div>January 28, 2014</div>
-						<p></p>
-					</div>
-
-				</div>
-
-			</div>
-
-
-			</div>
-			<br>
-
-		</div>
-	</div>
-	<div class="footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-				<p>Build with <a href="http://getbootstrap.com/">Bootstrap 3</a></p>
-				<p><a href="#">&copy; 2014 Rohit Deshpande</a></p>
-				</div>
-			</div>
-		</div>
-
-
-
-	</div>
-
-<!-- javascript -->
-     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-
-<!-- Google Analytics --> 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-41029669-2', 'rohitx.github.io');
-  ga('require', 'displayfeatures')
-  ga('send', 'pageview');
-
-</script>
-
-
-
-	</body>
-</html>
+  <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
+</div>
