@@ -20,9 +20,6 @@ layout: default
   {{ content }}
 </article>
 
-{% if page.comments %} 
-{% endif %}
-
 {% if site.show_related_posts %}
   <h3 class="related-post-title">Related Posts</h3>
   {% for post in site.related_posts %}
@@ -33,4 +30,7 @@ layout: default
       </a>
     </div>
   {% endfor %}
+{% endif %}
+
+{% if page.comments %} 
 {% endif %}
