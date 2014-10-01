@@ -2,6 +2,7 @@
 layout: post
 title: labels in log-log plot 
 tags: python
+comments:true
 summary: We often create log-log plots in python. By default matplotlib labels the axes in powers of 10. However, because I had zoomed into such a plot. My axes did
 ---
 We often create log-log plots in python. By default matplotlib labels the axes in powers of 10. However, because I had zoomed into such a plot. My axes did not go beyond 10. In such a case, the default plotting routine skips labeling small ticks. Searching through stackoverflow, I finally figured out how to get the labels show up correctly. The code and the result below shows how this works: 
