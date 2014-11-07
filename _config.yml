@@ -1,8 +1,8 @@
 # Site settings
-title: Rohit at 1 A.U.
+title: Rohit Deshpande
 email: singlebinary@gmail.com
 author: Rohit Deshpande
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
+description: ""
 baseurl: ""
 url: "/"
 google_analytics:
@@ -16,7 +16,7 @@ paginate: 5
 sass:
   compressed: true
 
-  name: Rohit 
+  name: Rohit
   email: singlebinary@gmail.com
   github: singlebinary
   twitter: singlebinary
