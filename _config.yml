@@ -1,31 +1,23 @@
 # Site settings
-title: Rohit Deshpande
-email: singlebinary@gmail.com
-author: Rohit Deshpande
-description: ""
-baseurl: ""
-url: "/"
-google_analytics:
-animated: true
-show_related_posts: false
+title: Writer Theme
+email: help@writer-theme.com
+description: > # Writer Theme is a responsive template
+ focussed on typography, minimal design and
+  quality photography built using the Jekyll platform.
+baseurl: "/writer/" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+enable_retina: false
+permalink: :title
+nav_list:
+  Home : ['Home', '/', 'fa-home']
+  About : ['About', '/about', 'fa-anchor']
+  Contact : ['Contact', '/contact', 'fa-plane']
+  Author : ['Author', '/author/michelle', 'fa-user']
+single_footer: '<p>The writer community loves your content. Writer &copy; 2015 <a href="/">latest posts</a></p>'
+footer_links:
+    About: ['About', '/about']
+    Writer: ['Writer 2015', '/about']
+
 
 # Build settings
 markdown: kramdown
-permalink: pretty
-paginate: 5
-sass:
-  compressed: true
-
-  name: Rohit
-  email: singlebinary@gmail.com
-  github: singlebinary
-  twitter: singlebinary
-  linkedin: www.linkedin.com/in/rohitsdeshpande/
-  bio: Rohit Deshpande <br>
-       Data Scientist & Astronomer
-  email_md5: 726351295ec82e145928582f595aa3aa
-
-rss_path: feed.xml
-categories_path: categories.html
-tags_path: tags.html
-comments: true
