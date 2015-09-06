@@ -1,5 +1,5 @@
 # Site settings
-title: Writer Theme
+title: Rohit Deshpande
 email: help@writer-theme.com
 description: > # Writer Theme is a responsive template
  focussed on typography, minimal design and
@@ -12,7 +12,7 @@ nav_list:
   Home : ['Home', '/', 'fa-home']
   About : ['About', '/about', 'fa-anchor']
   Contact : ['Contact', '/contact', 'fa-plane']
-  Author : ['Author', '/author/michelle', 'fa-user']
+  Author : ['Author', '/author/rohit', 'fa-user']
 single_footer: '<p>The writer community loves your content. Writer &copy; 2015 <a href="/">latest posts</a></p>'
 footer_links:
     About: ['About', '/about']
