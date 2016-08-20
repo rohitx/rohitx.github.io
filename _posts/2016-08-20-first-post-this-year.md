@@ -14,3 +14,7 @@ square_related: recommend-spain
 ---
 
 Ok, so I thinking of writing this new post beginning today. I will like to write new things that I have learned. So this is a test to see how  things work with this.
+
+```{r}
+p <- ggplot(data, aes(img, ads)) + geom_point()
+```
