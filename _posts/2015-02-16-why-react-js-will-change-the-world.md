@@ -1,11 +1,11 @@
 ---
 layout: post-sidebar
-date: 2015-02-10
-title: "Why React JS Will Change the World"
+date: 2016-08-20
+title: "This is a new post"
 categories: coding js
-author_name : Dan Robberts
+author_name : Rohit Deshpande
 author_url : /author/dan
-author_avatar: dan
+author_avatar: rohit
 show_avatar : true
 read_time : 22
 feature_image: feature-water
